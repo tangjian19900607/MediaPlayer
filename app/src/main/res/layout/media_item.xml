@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_audio_play" />
+
+    <TextView
+        android:id="@+id/play_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/play_button"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_alignTop="@id/play_button"
+        android:layout_alignBottom="@id/play_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/play_button">
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.75"
+            android:layout_marginTop="10dp"
+            android:indeterminate="false" />
+
+        <TextView
+            android:id="@+id/play_time"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+
+</RelativeLayout>
